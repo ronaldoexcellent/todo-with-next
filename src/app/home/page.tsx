@@ -3,6 +3,7 @@ import Plus from "@/components/svg/Plus";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Bubbles from "@/components/svg/Bubbles";
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <div className="absolute w-10/12 sm:w-96 -z-40 top-0 overflow-hidden">
             {/* Profile Section */}
             <div className="flex flex-col p-5 bg-[#50C2C9] items-center">
+                <Bubbles />
                 <Image
                     src="/ellipse 3.png"
                     alt="Profile"
