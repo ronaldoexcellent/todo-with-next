@@ -6,6 +6,7 @@ import Head from "next/head";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Illustration2 from "@/components/svg/Illustration2";
+import Bubbles from "@/components/svg/Bubbles";
 
 const Login: NextPage = () => {
     const [email, setEmail] = useState<string>('');
@@ -32,6 +33,7 @@ const Login: NextPage = () => {
         </Head>
 
         <div className="main">
+            <Bubbles />
           <h1 className="h1"> Welcome back </h1>
           <div className="illustration">
             <Illustration2 />
