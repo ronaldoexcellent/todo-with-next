@@ -3,6 +3,7 @@
 import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
+import Bubbles from "@/components/svg/Bubbles";
 
 const Register: NextPage = () => {
     const handleSubmit = (e: React.FormEvent) => e.preventDefault();
@@ -15,6 +16,7 @@ const Register: NextPage = () => {
         </Head>
 
         <div className="main">
+            <Bubbles />
           <h1 className="h1"> Welcome to Onboard! </h1>
           <p className="para-less-padding"> Let&apos;s help to meet up your tasks. </p>
 
