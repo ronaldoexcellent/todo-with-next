@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+.main {
+  @apply
+    grid text-center
+}
+
+.illustration {
+  @apply
+    flex justify-center mb-10
+}
+
+.para {
+  @apply
+    w-60 mx-auto text-xs mb-15
+}
+
+.para-less-padding {
+  @apply
+  w-36 mx-auto text-xs mb-15
+}
+
+.h1 {
+  @apply
+    mb-4 font-bold
+}
+
+.form {
+  @apply
+    grid justify-items-center
+}
+
+.appText {
+  @apply
+    font-semibold
+}
+
+.formInput {
+  @apply
+    w-10/12 sm:w-96 rounded-full py-3 px-5 text-xs mb-7 bg-white font-semibold outline-none
+}
+
+.mainButton {
+  @apply
+    p-3 w-10/12 sm:w-96 font-semibold rounded-lg bg-[#50C2C9] hover:bg-[#32a6ac] md:mx-2 text-white cursor-pointer text-sm
+}
+
+.error {
+  @apply
+    text-xs mb-4 text-red-600 text-shadow-red-400 font-semibold font-serif
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 2px solid #000;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+/* Checked state styling */
+input[type="checkbox"]:checked {
+  background-color: #50C2C9;
+}
+
+/* Create the checkmark using a pseudo-element */
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid #50C2C9;
+  border-width: 0 2px 2px 0;
+}
